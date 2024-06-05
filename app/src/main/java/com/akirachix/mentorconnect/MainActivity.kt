@@ -13,10 +13,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+
         val tvLogin=findViewById<TextView>(R.id.tvLogin)
         tvLogin.setOnClickListener{
             val intent=Intent(this,login::class.java)
             startActivity(intent)
         }
+
+
         }
     }
